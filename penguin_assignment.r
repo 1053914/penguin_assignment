@@ -46,6 +46,22 @@ save_plot_png <- function(penguins_clean, filename, size, res, scaling) {
 }
 
 # -------------
+# Define save_plot_svg() function
+save_plot_svg <- function(penguins_clean, 
+                                  filename, size, scaling){
+  size_inches = size/2.54
+  svglite(filename, width   = size_inches, 
+          height  = size_inches, 
+          scaling = scaling)
+  regression_plot <- plot_flipper_figure(penguins_flippers)
+  print(flipper_boxplot)
+  dev.off()
+}
+
+# -------------
+# Check penguins_raw is correctly loaded
+penguins_raw
+
 # Preserve the penguins_raw in the "data_raw" file in the "penguin_assignment" directory
 write.csv(penguins_raw, "data_raw/penguins_raw.csv")
 
@@ -65,3 +81,5 @@ plot
 # Save scatter plot in a file called "regression_plot.png" in the "figures" file
 save_plot_png(penguins_clean, "figures/regression_plot.png", size = 15, res = 600, scaling = 1)
 
+# Save scatter plot in a file called "regression_plot.svg in the "figures" file
+save_plot_svg(penguins_clean, "figures/regression_plot.svg", size = 15, scaling = 1)
