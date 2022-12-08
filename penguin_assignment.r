@@ -58,7 +58,13 @@ save_plot_svg <- function(penguins_clean, filename, size, scaling) {
 }
 
 # -------------
-# set working directory to the file containing this repo before running any of the following code
+# Create right working directory and layout
+setwd("C:\\Users\\Public\\Documents")
+dir.create("penguin_assignment")
+setwd("C:\\Users\\Public\\Documents\\penguin_assignment")
+dir.create("data_raw")
+dir.create("data_clean")
+dir.create("figures")
 
 # Check penguins_raw is correctly loaded
 penguins_raw
