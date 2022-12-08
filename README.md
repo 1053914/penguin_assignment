@@ -1,6 +1,6 @@
 # penguin_assignment
 
-The file penguin_assignment.R contains the code used to load the data, run the statistical analysis, and generate and save the plot
+The file penguin_assignment.r contains the code used to load the data, run the statistical analysis, and generate and save the plot
 
 Once the libraries are loaded, the penguins_raw data from the Palmer Penguins package is saved to the penguins_raw.csv to preserve it in the data_raw file
 
