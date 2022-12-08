@@ -58,6 +58,8 @@ save_plot_svg <- function(penguins_clean, filename, size, scaling) {
 }
 
 # -------------
+# set working directory to the file containing this repo before running any of the following code
+
 # Check penguins_raw is correctly loaded
 penguins_raw
 
