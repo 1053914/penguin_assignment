@@ -11,7 +11,7 @@ library(svglite)
 
 # -------------
 # Define cleaning() function
-cleaning <- function(data_raw) {
+cleaning <- function(data_raw){
   data_raw %>%
     clean_names() %>%
     remove_empty(c("rows", "cols")) %>%
@@ -52,8 +52,8 @@ save_plot_svg <- function(penguins_clean, filename, size, scaling) {
   svglite(filename, width   = size_inches, 
           height  = size_inches, 
           scaling = scaling)
-  regression_plot <- plot_flipper_figure(penguins_flippers)
-  print(flipper_boxplot)
+  regression_plot <- plot_regression(penguins_clean)
+  print(regression_plot)
   dev.off()
 }
 
