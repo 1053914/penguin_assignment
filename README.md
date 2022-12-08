@@ -2,6 +2,8 @@
 
 The file "penguin_assignment.r" contains the script used to load the data, run the statistical analysis, and generate and save the plots.
 
+Before running the scripts, make sure to set the working directory to the file containing this repo if it has been downloaded.
+
 Once the libraries are loaded and the functions are defined, the "penguins_raw" data from the Palmer Penguins package is saved to "penguins_raw.csv" to preserve it in the "data_raw" file.
 
 "penguins_raw" is then cleaned by removing any relevant NAs and renaming the headers to be consistent. The resulting dataset is saved as "penguins_clean", and is preserved as "penguins_clean.csv" in the "data_clean" file
