@@ -11,7 +11,7 @@ library(svglite)
 
 # -------------
 # Define cleaning() function
-cleaning <- function(data_raw){
+cleaning <- function(data_raw) {
   data_raw %>%
     clean_names() %>%
     remove_empty(c("rows", "cols")) %>%
